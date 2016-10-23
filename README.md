@@ -29,6 +29,7 @@ Memory Profiler
 ## PROPRIETARY_LOGGING
 - When you need the extra memory profile information or custom information, you need change the **PROPRIETARY_LOGGING** to **1** in ```ringbuffer.h.```  
 - Modify the ```malloc_count.cpp``` to add your logging method in the macro ```PROPRIETARY_LOGGING```
+
 ## Logging system Introduction
 - We logging the message by a **reader thread**.
 - Before execute the **main()**, the pre config environment is in ```static __attribute__((constructor)) void init(void)```
